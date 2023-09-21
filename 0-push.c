@@ -6,7 +6,7 @@
  * @count: line number
  * Return: void
  */
-void _push(stack_t **head, unsigned int counter)
+void _push(stack_t **head, unsigned int count)
 {
 	int n, y = 0, fl = 0;
 
@@ -37,8 +37,8 @@ void _push(stack_t **head, unsigned int counter)
 		exit(EXIT_FAILURE);
 	}
 	n = atoi(bus.arg);
-	if (bus.l_fi = 0)
-		a_node(head, n);
+	if (bus.l_fi == 0)
+		ad_node(head, n);
 	else
-		a_que(head, n);
+		_que(head, n);
 }

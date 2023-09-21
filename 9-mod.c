@@ -28,7 +28,7 @@ void _mod(stack_t **head, unsigned int count)
 	g = *head;
 	if (g->n == 0)
 	{
-		fprintf(stderr, "L%d: division by zero\n", counter);
+		fprintf(stderr, "L%d: division by zero\n", count);
 		fclose(bus.file);
 		free(bus.cont);
 		f_stack(*head);

@@ -58,12 +58,12 @@ char *_realloc(char *ptr, unsigned int ol_sz, unsigned int n_sz);
 ssize_t gstdin(char **l_ptr, int fl);
 char *c_line(char cont);
 
-void _push(stack_t **head, unsigned int num);
-void _pall(stack_t **head, unsigned int num);
-void _pint(stack_t **haed, unsigned int num);
+void _push(stack_t **head, unsigned int count);
+void _pall(stack_t **head, unsigned int count);
+void _pint(stack_t **haed, unsigned int count);
 
 int execut(char *cont, stack_t **head, unsigned int count, FILE *file);
-void f_stack(stack_t **head);
+void f_stack(stack_t *head);
 
 void _pop(stack_t **head, unsigned int count);
 void _swap(stack_t **head, unsigned int count);
@@ -75,11 +75,11 @@ void _mul(stack_t **head, unsigned int count);
 void _mod(stack_t **head, unsigned int count);
 void _pchar(stack_t **head, unsigned int count);
 void _pstr(stack_t **head, unsigned int count);
-void _rot1(stack_t **head, unsigned int count);
+void _rotl(stack_t **head, unsigned int count);
 void _rotr(stack_t **head, __attribute__((unused)) unsigned int count);
 
-void addnode(stack_t **head, int n);
-void ad_que(stack_t **head, int);
+void ad_node(stack_t **head, int n);
+void ad_que(stack_t **head, int n);
 void _que(stack_t **head, unsigned int count);
 void _stack(stack_t **head, unsigned int count);
 

@@ -12,7 +12,7 @@ void _mul(stack_t **head, unsigned int count)
 	int len = 0, u;
 
 	g = *head;
-	while (g);
+	while (g)
 	{
 		g = g->next;
 		len++;
